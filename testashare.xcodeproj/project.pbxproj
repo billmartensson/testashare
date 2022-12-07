@@ -11,7 +11,34 @@
 		ABC55D472940CDB900B72477 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC55D462940CDB900B72477 /* ContentView.swift */; };
 		ABC55D492940CDBB00B72477 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC55D482940CDBB00B72477 /* Assets.xcassets */; };
 		ABC55D4C2940CDBB00B72477 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC55D4B2940CDBB00B72477 /* Preview Assets.xcassets */; };
+		ABC55D592940CE6100B72477 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC55D582940CE6100B72477 /* ShareViewController.swift */; };
+		ABC55D5C2940CE6100B72477 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC55D5A2940CE6100B72477 /* MainInterface.storyboard */; };
+		ABC55D602940CE6100B72477 /* deladela.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = ABC55D562940CE6100B72477 /* deladela.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ABC55D5E2940CE6100B72477 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABC55D392940CDB900B72477 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABC55D552940CE6100B72477;
+			remoteInfo = deladela;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ABC55D642940CE6100B72477 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ABC55D602940CE6100B72477 /* deladela.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		ABC55D412940CDB900B72477 /* testashare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testashare.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +46,21 @@
 		ABC55D462940CDB900B72477 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ABC55D482940CDBB00B72477 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABC55D4B2940CDBB00B72477 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ABC55D562940CE6100B72477 /* deladela.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = deladela.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABC55D582940CE6100B72477 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		ABC55D5B2940CE6100B72477 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		ABC55D5D2940CE6100B72477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		ABC55D3E2940CDB900B72477 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABC55D532940CE6100B72477 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				ABC55D432940CDB900B72477 /* testashare */,
+				ABC55D572940CE6100B72477 /* deladela */,
 				ABC55D422940CDB900B72477 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				ABC55D412940CDB900B72477 /* testashare.app */,
+				ABC55D562940CE6100B72477 /* deladela.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +107,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		ABC55D572940CE6100B72477 /* deladela */ = {
+			isa = PBXGroup;
+			children = (
+				ABC55D582940CE6100B72477 /* ShareViewController.swift */,
+				ABC55D5A2940CE6100B72477 /* MainInterface.storyboard */,
+				ABC55D5D2940CE6100B72477 /* Info.plist */,
+			);
+			path = deladela;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +127,34 @@
 				ABC55D3D2940CDB900B72477 /* Sources */,
 				ABC55D3E2940CDB900B72477 /* Frameworks */,
 				ABC55D3F2940CDB900B72477 /* Resources */,
+				ABC55D642940CE6100B72477 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				ABC55D5F2940CE6100B72477 /* PBXTargetDependency */,
 			);
 			name = testashare;
 			productName = testashare;
 			productReference = ABC55D412940CDB900B72477 /* testashare.app */;
 			productType = "com.apple.product-type.application";
+		};
+		ABC55D552940CE6100B72477 /* deladela */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABC55D612940CE6100B72477 /* Build configuration list for PBXNativeTarget "deladela" */;
+			buildPhases = (
+				ABC55D522940CE6100B72477 /* Sources */,
+				ABC55D532940CE6100B72477 /* Frameworks */,
+				ABC55D542940CE6100B72477 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = deladela;
+			productName = deladela;
+			productReference = ABC55D562940CE6100B72477 /* deladela.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +167,9 @@
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					ABC55D402940CDB900B72477 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					ABC55D552940CE6100B72477 = {
 						CreatedOnToolsVersion = 14.0;
 					};
 				};
@@ -116,6 +188,7 @@
 			projectRoot = "";
 			targets = (
 				ABC55D402940CDB900B72477 /* testashare */,
+				ABC55D552940CE6100B72477 /* deladela */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +200,14 @@
 			files = (
 				ABC55D4C2940CDBB00B72477 /* Preview Assets.xcassets in Resources */,
 				ABC55D492940CDBB00B72477 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABC55D542940CE6100B72477 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABC55D5C2940CE6100B72477 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +223,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ABC55D522940CE6100B72477 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABC55D592940CE6100B72477 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ABC55D5F2940CE6100B72477 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABC55D552940CE6100B72477 /* deladela */;
+			targetProxy = ABC55D5E2940CE6100B72477 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ABC55D5A2940CE6100B72477 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABC55D5B2940CE6100B72477 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		ABC55D4D2940CDBB00B72477 /* Debug */ = {
@@ -262,6 +370,7 @@
 		ABC55D502940CDBB00B72477 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +400,7 @@
 		ABC55D512940CDBB00B72477 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -317,6 +427,56 @@
 			};
 			name = Release;
 		};
+		ABC55D622940CE6100B72477 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6SGQZ32758;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = deladela/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = deladela;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = se.magictechnology.testashare.deladela;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ABC55D632940CE6100B72477 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6SGQZ32758;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = deladela/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = deladela;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = se.magictechnology.testashare.deladela;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -334,6 +494,15 @@
 			buildConfigurations = (
 				ABC55D502940CDBB00B72477 /* Debug */,
 				ABC55D512940CDBB00B72477 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABC55D612940CE6100B72477 /* Build configuration list for PBXNativeTarget "deladela" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABC55D622940CE6100B72477 /* Debug */,
+				ABC55D632940CE6100B72477 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
